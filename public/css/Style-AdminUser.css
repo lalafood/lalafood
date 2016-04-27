@@ -1,0 +1,212 @@
+body{
+  background : url('../pic/woodbg.png');
+  font-family: Arial;
+  overflow-y: hidden;
+}
+img{
+  opacity: 0.5;
+  margin-left: -2.5%;
+}
+.center h1{
+  font-family:'Dancing Script';
+  margin-top: -100px;
+  margin-left: 10%;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  font-size: 100px;
+  opacity: 0.7;
+  color: #40bf80;
+}
+.center span{
+  margin-top: -20px;
+    margin-left: 8%;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  font-size: 20px;
+  opacity: 0.7;
+    color: #ffffff;
+}
+
+.subcenter{
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.head-box {
+  display: inline-block;
+  font-family: Arial;
+  height: 50px;
+  margin: -25px 10px 0px -30px;
+  width: 298px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1cm;
+  font-weight: normal;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 15px solid rgba(0, 0, 0, 0.7);
+}
+.tip-left {
+  top: 100px;
+  left: 423px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.center-left , .center-right { /* 3 boxs*/
+  margin-top: 0;
+  font-family: Arial;
+  float: left;
+  display: inline-block;
+  margin: 5px;
+  background-color:rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+.center-left{ /* table user*/
+  margin-top: 0px;
+  margin-left: 10%;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 100%;
+}
+input[type=text] { /* forms Add Food */
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  width: 200px;
+  height: 40px;
+  outline: 0;
+  letter-spacing: 1px;
+}
+
+select[type=text] { /* forms Add Food */
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  width: 200px;
+  height: 40px;
+  outline: 0;
+  letter-spacing: 1px;
+}
+
+.type {
+  border: none;
+  letter-spacing: 1px;
+  color: #000000;
+
+}
+
+input[type=text]:focus { /* forms Add Food */
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  width: 220px;
+  height: 40px;
+  letter-spacing: 1px;
+}
+
+
+.center-right{ /* table user*/
+  overflow-x: hidden;
+  margin-top: 0px;
+  margin-left: 20px;
+  width: auto;
+  height: 400px;
+
+}
+
+table {
+  border-collapse: collapse;
+  width: auto;
+}
+
+th {
+  padding: 10px 20px 10px 20px;
+  text-align: left;
+  background-color: #40bf80;
+  color: white;
+  opacity: 0.7;
+
+}
+td {
+  padding: 10px 20px 10px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ffffff;
+
+}
+
+
+button[type=edit] , button[type=delete] { /*buttom for edit , delete*/
+    text-align: center;
+    background-color: #aaa;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Arial;
+    width: 70px;
+    height: 35px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+  }
+button[type=edit]:hover , button[type=delete]:hover { /*when click buttom edit , delete */
+      font-size: 17px;
+      letter-spacing: 2px;
+      background-color: rgba(0, 0, 0, 0);
+      color : #ffffff;
+      border: 2px solid #ffffff;
+  }
+
+button[type=addfoods] { /*buttom for Add food*/
+      margin-top: 20px;
+      text-align: center;
+      background-color: #40bf80;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: Arial;
+      width: 200px;
+      height: 35px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      opacity: 0.7;
+    }
+button[type=addfoods]:hover { /*when click buttom Add food*/
+        font-size: 17px;
+        letter-spacing: 2px;
+        background-color: rgba(0, 0, 0, 0);
+        color : #ffffff;
+        border: 2px solid #ffffff;
+    }

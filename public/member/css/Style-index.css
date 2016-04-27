@@ -1,0 +1,155 @@
+
+/*.banner { /*Slider
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}*/
+.header-text { /*Slider text*/
+  position: relative;
+  height: 80px;
+  text-align: center;
+  margin-top: -40px;
+  width: 300px;
+  z-index: 1;
+  color: #000000;
+  font-weight: lighter;
+  background-color:rgba(0, 0, 0, 0.2);
+}
+.center-top{
+  background : url('../pic/woodbg.png');
+  margin-top:38%;
+  padding-top: 20px;
+  width: 100%;
+  height: 280px;
+  text-align: center;
+  color: #ffffff;
+}
+.center-top h1 {
+  font-family:'Dancing Script';
+  text-align: center;
+  font-size: 80px;
+  color: #40bf80;
+    opacity: 0.9;
+}
+
+.center-top-text{
+  opacity: 0.7;
+}
+
+.center-content{
+  margin-top:1%;
+  height: 100%;
+  margin-left: 0.1%;
+  text-align: center;
+}
+
+.center-subcontent{
+    display: inline-block;
+    width: 441px;
+    height: 347px;
+    margin-top: -3px;
+    margin-left :0px;
+    border: none;
+}
+
+.center-subcontent img{
+  position: relative;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.center-subcontent div {
+  position: absolute;
+  height: 90px;
+  text-align: center;
+  width: 441px;
+  margin-top: 120px;
+  z-index: 2;
+  background-color:rgba(0, 0, 0, 0.5);
+  padding-top: 20px;
+}
+.center-subcontent div:hover {
+    background-color:rgba(166, 166, 155, 0);
+    margin-top: 110px;
+    font-size: 130%;
+}
+
+.center-subcontent span, h1 {
+  color : #ffffff;
+  opacity: 0.8;
+}
+
+.center-subcontent-wood button[type=submit] { /*buttom sign in*/
+    position: absolute;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 120px;
+    z-index: 2;
+    background-color: #40bf80;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Arial;
+    width: 200px;
+    height: 43px;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+
+.center-subcontent-wood button[type=submit]:hover { /*buttom sign in*/
+      position: absolute;
+      text-align: center;
+      margin-top: 200px;
+      margin-left: 120px;
+      z-index: 2;
+      background-color: rgba(166, 166, 155, 0);
+      border: 2px solid #ffffff;
+      border-radius: 4px;
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: Arial;
+      width: 200px;
+      height: 43px;
+      font-weight: bold;
+    }
+
+  .center-subcontent-wood { /* background is wood (type of menu)*/
+      display: inline-block;
+      width: 441px;
+      height: 347px;
+      margin-top: -3px;
+      margin-left :0px;
+      border: none;
+  }
+
+  .center-subcontent-wood img{
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+  }
+  .center-subcontent-wood div {
+    position: absolute;
+    height: 90px;
+    text-align: center;
+    width: 441px;
+    margin-top: 80px;
+    z-index: 2;
+    opacity: 0.9;
+    color : #ffffff;
+  }
+  .center-subcontent-wood span {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -90px;
+  }
+  .center-subcontent-wood h1 {
+     font-family:'Dancing Script';
+     font-size: 60px;
+  }

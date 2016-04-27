@@ -1,0 +1,135 @@
+        body { /*style for body*/
+            background-image: url('../pic/bg.jpg');
+            height: 100%;
+            font-family: Arial;
+        }
+
+        .toplogin { /*head "Login*/
+            font-family: Arial;
+            height: 50px;
+            margin: 30px auto 0;
+            width: 298px;
+            color: rgba(0, 0, 0, 0.7);
+            line-height: 1.5cm;
+            font-weight: normal;
+            font-size: 50px;
+            letter-spacing: 2px;
+        }
+
+        .login { /*box login*/
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: none;
+            height: 220px;
+            margin: 20px auto 0;
+            width: 353px;
+            outline: 0;
+        }
+
+        input[type="password"] { /*box password*/
+            background-image: url('../pic/pass1.png');
+            background-position: 12px 12px;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 1);
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0 1px #fff;
+            box-sizing: border-box;
+            height: 43px;
+            margin: 10px 0 0 45px;
+            padding-left: 37px;
+            transition: box-shadow 0.3s;
+            width: 260px;
+            opacity: 0.5;
+            box-shadow: 0 0 4px 1px rgba(166, 166, 155, 0.3);
+            outline: 0;
+            font-size: 14px;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        input[type="text-login"] { /*box login*/
+            background-image: url('../pic/user1.png');
+            background-position: 12px 12px;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 1);
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0 1px #fff;
+            box-sizing: border-box;
+            height: 43px;
+            margin: 31px 0 0 45px;
+            padding-left: 37px;
+            transition: box-shadow 0.3s;
+            width: 260px;
+            opacity: 0.5;
+            box-shadow: 0 0 4px 1px rgba(166, 166, 155, 0.3);
+            outline: 0;
+            font-size: 14px;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        input[type="text-login"]:focus { /*when focus box username*/
+            background-image: url('../pic/user2.png');
+            background-position: 12px 12px;
+            background-repeat: no-repeat;
+            background-color: #ffffff;
+            background-position: 15px 15px;
+            opacity: 0.5;
+            height: 48px;
+            width: 300px;
+            border: none;
+            color: #333333;
+            font-family: Arial;
+            font-size: 14px;
+            margin: 31px 0 0 25px;
+            outline: 0;
+            font-weight: bold;
+        }
+
+        input[type="password"]:focus { /*when focus box password*/
+            background-image: url('../pic/pass2.png');
+            background-position: 12px 12px;
+            background-repeat: no-repeat;
+            background-color: #ffffff;
+            background-position: 15px 15px;
+            opacity: 0.5;
+            height: 48px;
+            width: 300px;
+            border: none;
+            color: #333333;
+            font-family: Arial;
+            font-size: 14px;
+            margin: 10px 0 0 25px;
+            outline: 0;
+            font-weight: bold;
+        }
+
+        .show-password { /*lock show password*/
+            display: block;
+            height: 16px;
+            margin: 26px 0 0 28px;
+            width: 87px;
+        }
+
+        button[type=submit] { /*buttom sign in*/
+            text-align: center;
+            background-color: #40bf80;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            margin: 20px 0 0 45px;
+            text-decoration: none;
+            cursor: pointer;
+            font-family: Arial;
+            width: 260px;
+            height: 43px;
+            font-weight: bold;
+            opacity: 0.7;
+          }
+
+        button[type=submit]:active , button[type=submit]:hover { /*when click buttom sign in */
+            border: 2px solid #ffffff;
+            letter-spacing: 2px;
+            background-color: rgba(255, 255, 255, 0);
+        }

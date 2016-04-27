@@ -1,0 +1,65 @@
+body{
+  background : url('../pic/woodbg.png');
+  font-family: Arial;
+  overflow-y: hidden;
+}
+img{
+  opacity: 0.5;
+  margin-left: -2.5%;
+}
+.center h1{
+  font-family:'Dancing Script';
+  margin-top: -60px;
+  margin-left: 10%;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  font-size: 100px;
+  opacity: 0.7;
+  color: #40bf80;
+}
+.center span{
+  margin-top: -20px;
+  margin-left: 8%;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  font-size: 20px;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.subcenter{
+  margin-left: -2.5%;
+  margin-top: -1%;
+  margin-bottom: 19%;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  font-weight: lighter;
+}
+
+.center-top {
+  font-family: Arial;
+  line-height: 1.5cm;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.User-box , .Food-box { /*Text - User nad Food*/
+  color: #ffffff;
+  padding-top: 1.5%;
+  display: inline-block;
+  width: 220px;
+  height: 80px;
+  background-color:rgba(0, 0, 0, 0.4);
+}
+
+
+.User-box:hover , .Food-box:hover {
+  background-color:rgba(255, 255, 255, 0);
+  letter-spacing: 3px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+
+}

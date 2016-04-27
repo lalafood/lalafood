@@ -1,0 +1,271 @@
+body{
+  background : url('../pic/woodbg.png');
+  font-family: Arial;
+  overflow-y: hidden;
+}
+#imgline{ /*line between "Welcome!" and "Food"*/
+  opacity: 0.5;
+  margin-left: -2.5%;
+}
+
+.center h1{ /*Welcome!*/
+  font-family:'Dancing Script';
+  margin-top: -100px;
+  margin-left: 10%;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  font-size: 80px;
+  opacity: 0.7;
+  color: #40bf80;
+}
+.center span{ /*A D M I N I S T R A T O R*/
+  margin-top: -20px;
+  margin-left: 12%;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  font-size: 20px;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.subcenter { /*style contain 3 boxs*/
+  margin: 10px;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.head-box { /*Food*/
+  display: inline-block;
+  font-family: Arial;
+  height: 50px;
+  margin: -25px 10px 0px 0px;
+  width: 298px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5cm;
+  font-weight: normal;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.center-left , .center-center ,.center-right{ /* 3 boxs*/
+  font-family: Arial;
+  float: left;
+  display: inline-block;
+  margin: 5px;
+  width: 430px;
+  height: 430px;
+  margin-bottom: 100%;
+  background-color:rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+.center-left{
+    overflow-y: scroll;
+}
+
+#img{ /* contain left (picture 1 )*/
+  margin-top: 5px;
+  padding: 3px;
+  opacity: 1;
+}
+
+
+.center-center p { /* contain center (detail)*/
+  font-family: Arial;
+  padding: 10px 50px;
+  letter-spacing: 1px;
+}
+.center-right textarea{ /* contain right (comment)*/
+  margin: 10px;
+  font-size: 16px;
+  padding: 10px;
+  font-family: Arial;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+ button[type=submit-comment] ,button[type=cancle] { /*buttom Comment and Canale*/
+    text-align: center;
+    background-color: #40bf80;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Arial;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    margin-top: -5px;
+    margin-left:20px;
+  }
+button[type=submit-comment]:hover , button[type=cancle]:hover { /*when click buttom Comment and Canale */
+      font-size: 17px;
+      letter-spacing: 2px;
+      background-color: rgba(0, 0, 0, 0);
+      color : #ffffff;
+      border: 2px solid #ffffff;
+  }
+/*---------------------------------------------Show Rating-----------------------------------------------------*/
+
+  .rating {
+    text-align: center;
+    position: relative;
+    float: left;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  .star {
+    display: inline-block;
+    margin: 5px;
+    font-size: 30px;
+    color: whitesmoke;
+    position: relative;
+  }
+  .star.animate {
+    -webkit-animation: stretch-bounce .5s ease-in-out;
+  }
+  .star.hidden {
+    opacity: 0;
+  }
+
+  .full:before {
+    font-family: fontAwesome;
+    display: inline-block;
+    content: "\f005";
+    position: relative;
+    float: right;
+    z-index: 2;
+  }
+
+  .half:before {
+    font-family: fontAwesome;
+    content: "\f089";
+    position: absolute;
+    float: left;
+    z-index: 3;
+  }
+
+  .star-colour {
+    color: #ffd700;
+  }
+
+  @-webkit-keyframes stretch-bounce {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    25% {
+      -webkit-transform: scale(1.5);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+    }
+    75% {
+      -webkit-transform: scale(1.2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+  .selected:before {
+    font-family: fontAwesome;
+    display: inline-block;
+    content: "\f005";
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(1);
+    opacity: 1;
+    z-index: 1;
+  }
+  .selected.pulse:before {
+    -webkit-transform: scale(3);
+    opacity: 0;
+  }
+  .selected.is-animated:before {
+    transition: 1s ease-out;
+  }
+
+  .score {
+    font-family: arial;
+    font-size: 16px;
+    color: #333;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .score-rating {
+    vertical-align: sup;
+    top: -5px;
+    position: relative;
+    font-size: 100%;
+  }
+
+
+/*---------------------------------------------Show Comment-----------------------------------------------------*/
+.center-right-showcomment{ /* comment all*/
+  overflow-y: scroll;
+  width: 430px;
+  height: 248px;
+}
+
+.center-right-showcomment p{ /* ex. Plammy, Time : 29/01/16-18.20 and box-comment */
+  font-size: 14px;
+}
+.center-right-showcomment span{ /* message in box-comment*/
+  margin-top: 6px;
+  margin-left: -30px;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+
+  .tip {/* style arrow*/
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #ffffff;
+  }
+
+  .dialogbox .src{
+    padding: 50px 50px;
+    margin-left: 500px;
+
+  }
+  .tip-up { /* style arrow-tip-up*/
+    top: -28px; /* Same as body margin top + border */
+    left: 40px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+  }
+  .dialogbox .body {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    margin: 20px 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    border: 2px solid #ffffff;
+  }
+
+  .body {
+    min-height: 30px;
+    border-radius: 3px;
+    line-height: 1.5;
+  }

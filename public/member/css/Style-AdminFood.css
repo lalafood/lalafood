@@ -1,0 +1,240 @@
+body{
+  background : url('../pic/woodbg.png');
+  font-family: Arial;
+  overflow-y: hidden;
+}
+#line { /*line between "Welcome!" and "View User"*/
+  opacity: 0.5;
+  margin-left: -2.5%;
+}
+.center h1{ /*Welcome!*/
+  font-family:'Dancing Script';
+  margin-top: -100px;
+  margin-left: 10%;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  font-size: 100px;
+  opacity: 0.7;
+  color: #40bf80;
+}
+.center span{ /*A D M I N I S T R A T O R*/
+  margin-top: -20px;
+  margin-left: 8%;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  font-size: 20px;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.subcenter{ /*style contain 3 boxs*/
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.head-box { /*View Foods*/
+  display: inline-block;
+  font-family: Arial;
+  height: 50px;
+  margin: -25px 10px 0px -30px;
+  width: 298px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1cm;
+  font-weight: normal;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.tip { /*arrow*/
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 15px solid rgba(0, 0, 0, 0.7);
+}
+.tip-left { /*arrow left*/
+  top: 100px;
+  left: 423px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.center-left , .center-right { /* 3 boxs*/
+  margin-top: 0;
+  font-family: Arial;
+  float: left;
+  display: inline-block;
+  margin: 5px;
+  background-color:rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+.center-left{ /* box for input for deteils foods*/
+  margin-top: 0px;
+  margin-left: 2%;
+  width: 380px;
+  height: 400px;
+  margin-bottom: 100%;
+  overflow-x: hidden;
+}
+
+input[type=text] { /* input for deteils foods */
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  width: 200px;
+  height: 40px;
+  outline: 0;
+  letter-spacing: 1px;
+}
+
+select[type=text] { /* input for deteils foods */
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  width: 200px;
+  height: 40px;
+  outline: 0;
+  letter-spacing: 1px;
+}
+
+
+input[type=text]:focus { /* focus : input for deteils foods */
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  width: 220px;
+  height: 40px;
+  letter-spacing: 1px;
+}
+
+.center-left textarea { /* input for deteils foods */
+  font-family: Arial;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  letter-spacing: 1px;
+}
+
+.center-left textarea:focus { /* focus : input for deteils foods */
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  letter-spacing: 1px;
+}
+
+.choosefile {
+  margin-top: -15px;
+}
+
+.center-right{ /* box for table for deteils foods*/
+  overflow-x: hidden;
+  margin-top: 0px;
+  margin-left: 10px;
+  width: 900px;
+  height: 400px;
+
+}
+
+table { /* table */
+  border-collapse: collapse;
+  width: auto;
+}
+
+th { /*head collums*/
+  padding: 10px 50px 10px 10px;
+  text-align: center;
+  background-color: #40bf80;
+  color: white;
+  opacity: 0.7;
+}
+
+td { /*details for foos any collums*/
+  padding: 10px 0px 10px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ffffff;
+  margin-left: 10px;
+}
+
+img { /* 3 pictures of foods */
+  opacity: 1;
+  border: none;
+}
+
+button[type=edit] , button[type=delete] { /*buttom for edit , delete*/
+    text-align: center;
+    background-color: #aaa;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Arial;
+    width: 70px;
+    height: 35px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+  }
+button[type=edit]:hover , button[type=delete]:hover { /*when click buttom edit , delete */
+      font-size: 17px;
+      letter-spacing: 2px;
+      background-color: rgba(0, 0, 0, 0);
+      color : #ffffff;
+      border: 2px solid #ffffff;
+  }
+
+button[type=addfoods] { /*buttom for Add food - box left*/
+      margin-top: -5px;
+      margin-bottom: 10px;
+      text-align: center;
+      background-color: #40bf80;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: Arial;
+      width: 200px;
+      height: 35px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      opacity: 0.7;
+    }
+button[type=addfoods]:hover { /*when click buttom Add food - box left*/
+        font-size: 17px;
+        letter-spacing: 2px;
+        background-color: rgba(0, 0, 0, 0);
+        color : #ffffff;
+        border: 2px solid #ffffff;
+    }
